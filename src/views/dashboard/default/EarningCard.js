@@ -179,15 +179,15 @@ const EarningCard = ({ isLoading }) => {
                                             horizontal: 'right'
                                         }}
                                     >
-                                        <MenuItem onClick={handleGravar}>
+                                        <MenuItem >
                                             <GetAppTwoToneIcon fontSize="inherit" className={classes.menuItem} />
                                             Inserir
                                         </MenuItem>
-                                        <MenuItem onClick={handleClose}>
+                                        <MenuItem >
                                             <PictureAsPdfTwoToneIcon fontSize="inherit" className={classes.menuItem} />
                                             Alterar
                                         </MenuItem>
-                                        <MenuItem onClick={handleConsultar}>
+                                        <MenuItem >
                                             <FileCopyTwoToneIcon fontSize="inherit" className={classes.menuItem} />
                                             Consultar
                                         </MenuItem>

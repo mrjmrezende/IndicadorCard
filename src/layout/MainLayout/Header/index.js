@@ -6,9 +6,9 @@ import { makeStyles } from '@material-ui/styles';
 import { Avatar, Box, ButtonBase } from '@material-ui/core';
 
 // project imports
-import LogoSection from '../LogoSection';
-import SearchSection from './SearchSection';
-import ProfileSection from './ProfileSection';
+// import LogoSection from '../LogoSection';
+// import SearchSection from './SearchSection';
+// import ProfileSection from './ProfileSection';
 import NotificationSection from './NotificationSection';
 
 // assets
@@ -49,7 +49,7 @@ const Header = ({ handleLeftDrawerToggle }) => {
             {/* logo & toggler button */}
             <div className={classes.boxContainer}>
                 <Box component="span" sx={{ display: { xs: 'none', md: 'block' }, flexGrow: 1 }}>
-                    <LogoSection />
+                    {/* <LogoSection /> */}
                 </Box>
                 <ButtonBase sx={{ borderRadius: '12px', overflow: 'hidden' }}>
                     <Avatar variant="rounded" className={classes.headerAvatar} onClick={handleLeftDrawerToggle} color="inherit">
@@ -59,13 +59,13 @@ const Header = ({ handleLeftDrawerToggle }) => {
             </div>
 
             {/* header search */}
-            <SearchSection theme="light" />
+            {/* <SearchSection theme="light" /> */}
             <div className={classes.grow} />
             <div className={classes.grow} />
 
             {/* notification & profile */}
             <NotificationSection />
-            <ProfileSection />
+            {/* <ProfileSection /> */}
         </React.Fragment>
     );
 };
