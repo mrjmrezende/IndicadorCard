@@ -1,2 +1,1 @@
-# EarninCard
-Created with CodeSandbox
+# Indicadores.dyagnosys.tk
