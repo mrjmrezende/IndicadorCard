@@ -124,30 +124,7 @@ const EarningCard = ({ isLoading }) => {
 
     };
     // console.log(account.token);
-    const handleGravar = () => {
-        const QueryDadoVital = {
-            TemperaturaCorporal: 2220,
-            Glicemia: 80,
-            PercOxigenio: 22298,
-        };
 
-        // console.log(account.token);
-
-        setAnchorEl(null);
-        fetch('https://backend.dyagnosys.tk/api/datahealth/edit/615c7cbdb6f93d00071a59b8', {
-            method: 'put',
-            headers: new Headers({
-                'Authorization': `${account.token}`,
-                'Content-Type': 'application/json'
-            }),
-            body: JSON.stringify({ DadoVital: QueryDadoVital }),
-        })
-            .then((res) => res.json())
-            .then((result) => {
-                console.log(result)
-            })
-            .catch((err) => console.log('error'))
-    }
     const handleClose = () => {
         setAnchorEl(null);
     }
@@ -159,23 +136,7 @@ const EarningCard = ({ isLoading }) => {
     const open2 = Boolean(anchorEl);
     const id = open2 ? 'simple-popper' : undefined;
 
-    const handleConsultar = () => {
 
-        fetch('https://backend.dyagnosys.tk/api/datahealth/615c7cbdb6f93d00071a59b8', {
-            method: 'get',
-            headers: new Headers({
-                'Authorization': `${account.token}`,
-                'Content-Type': 'application/json'
-            }),
-        })
-            .then((res) => res.json())
-            .then((result) => {
-                // console.log(result)
-                const { TemperaturaCorporal, Glicemia, PercOxigenio, Data } = result
-                setglicemia(Glicemia);
-            })
-            .catch((err) => console.log('error'))
-    }
 
 
     return (
@@ -251,23 +212,23 @@ const EarningCard = ({ isLoading }) => {
                                 <Grid item>
                                     <Typography className={classes.cardHeading}>{glicemia} mg/dL</Typography>
                                 </Grid>
-                                
+
                                 <Grid item>
                                     <Avatar className={classes.avatarCircle}>
                                         <ArrowUpwardIcon fontSize="inherit" className={classes.circleIcon} />
                                     </Avatar>
                                 </Grid>
                             </Grid>
-                            
+
                         </Grid>
                         <Grid item sx={{ mb: 1.25 }}>
                             <Typography className={classes.subHeading}>Glicemia</Typography>
                         </Grid>
                     </Grid>
-                    
+
                 </MainCard>
             )}
-            
+
         </React.Fragment>
     );
 };
