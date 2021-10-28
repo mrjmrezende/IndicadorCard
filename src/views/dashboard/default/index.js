@@ -13,6 +13,7 @@ import TotalIncomeLightCard from './TotalIncomeLightCard';
 import { gridSpacing } from './../../../store/constant';
 import CardiacIndicator from './CardiacIndicator';
 import IndicatorsCard from './IndicatorsCard';
+import CorporealIndicator from './CorporealIndicator';
 
 //-----------------------|| DEFAULT DASHBOARD ||-----------------------//
 
@@ -43,7 +44,12 @@ const Dashboard = () => {
                         <IndicatorsCard isLoading={isLoading} 
                                         title='Indicadores Corpóreos' 
                                         subTitle='Últimos dados coletados' 
-                                        date="28/10/2021"/>
+                                        date="28/10/2021"
+                                        body={<CorporealIndicator imc='25'
+                                                                  metabolismo='25'
+                                                                  percentualGordura='32%'
+                                                                  gorduraViceral='32%'
+                                                                  musculoEsquletico='32%' />}/>
                     </Grid>
                     <Grid item >
                         <IndicatorsCard isLoading={isLoading} 

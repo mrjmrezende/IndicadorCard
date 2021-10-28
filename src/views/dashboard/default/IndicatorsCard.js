@@ -118,9 +118,9 @@ const IndicatorsCard = ({ isLoading, title, subTitle, date, body }) => {
                         <Grid item className={classes.body}>
                             {body}
                         </Grid>
-                        <Grid item className={classes.bottom}>
+                        {/*<Grid item className={classes.bottom}>
                             <Button className={classes.button}>Voltar</Button>
-                        </Grid>
+                        </Grid>*/}
                     </Grid>
                 </MainCard>
             )}
