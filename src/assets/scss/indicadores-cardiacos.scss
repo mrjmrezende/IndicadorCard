@@ -1,0 +1,230 @@
+@import "./_cards-style.scss";
+
+.indicadoresCardiacos {
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 $transparent-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid $dodger-blue;
+}
+.header {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column {
+  padding: 10px 0 0;
+  width: 301px;
+  height: 55.5px;
+  position: relative;
+}
+.row {
+  padding: 0 17px 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h1 {
+  height: 20.41px;
+  width: 267px;
+  color: $midnight-blue;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+  @include roboto-22-medium;
+}
+.h4 {
+  height: 13.07px;
+  width: 153px;
+  color: $dodger-blue;
+  display: flex;
+  text-align: center;
+  letter-spacing: -0.26px;
+  @include body;
+}
+.diviser {
+  width: 357px;
+  position: absolute;
+  right: -56px;
+  bottom: 0;
+}
+.columnTwo {
+  background-color: $cornflower-blue;
+  border-radius: 0px 16px 0px 30px;
+  padding: 20px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25.5px;
+}
+.rowTwo {
+  background-color: $white;
+  border-radius: 31px;
+  padding: 0 7px 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.span {
+  color: $midnight-blue;
+  @include roboto-18-regular;
+}
+.body {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+.columnThree {
+  background-color: $transparent-silver;
+  padding: 16px 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 82px;
+}
+.rowThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spanTwo {
+  width: 75px;
+  color: $text;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  @include roboto-64-medium;
+}
+.spanThree {
+  color: $text;
+  text-align: center;
+  opacity: 0.7;
+  @include roboto-14-regular;
+}
+.columnFour {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rowFour {
+  background-color: $transparent-silver;
+  padding: 9px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 39px;
+}
+.sistole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:not(:last-of-type) {
+    margin-right: 49px;
+  }
+}
+.spanFour {
+  width: 49px;
+  color: $text;
+  text-align: center;
+  text-transform: uppercase;
+  @include roboto-36-medium;
+}
+.spanFive {
+  color: $text;
+  text-align: center;
+  opacity: 0.7;
+  @include roboto-10-regular;
+}
+.spanSix {
+  width: 69px;
+  color: $text;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1px;
+  @include roboto-36-medium;
+}
+.rowFive {
+  background-color: $transparent-silver;
+  padding: 9px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 39px;
+  width: 199px;
+}
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.diastole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:not(:last-of-type) {
+    margin-right: 29px;
+  }
+}
+.icon {
+  width: 23px;
+  height: 23px;
+  background-color: $silver;
+  margin-bottom: 1px;
+  border-radius: 50%;
+}
+.spanSeven {
+  color: $black-1;
+  text-align: center;
+  @include roboto-10-regular;
+}
+.containerTwo {
+  background-color: $transparent-white;
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.vector {
+  width: 69px;
+  height: 56px;
+  margin-right: 23px;
+}
+.vectorTwo {
+  width: 192.31px;
+  height: 40px;
+}
+.footer {
+  background-color: $transparent-silver;
+  padding: 29px 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 30.5px;
+}
+.diviserTwo {
+  width: 156px;
+  margin-bottom: 17px;
+}
+.botaoVoltar {
+  height: 25px;
+  width: 90px;
+}

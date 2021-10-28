@@ -11,6 +11,8 @@ import TotalIncomeDarkCard from './TotalIncomeDarkCard';
 import TotalIncomeLightCard from './TotalIncomeLightCard';
 // import TotalGrowthBarChart from './TotalGrowthBarChart';
 import { gridSpacing } from './../../../store/constant';
+import CardiacIndicator from './CardiacIndicator';
+import IndicatorsCard from './IndicatorsCard';
 
 //-----------------------|| DEFAULT DASHBOARD ||-----------------------//
 
@@ -24,8 +26,30 @@ const Dashboard = () => {
         <Grid container spacing={gridSpacing}>
             <Grid item xs={12}>
                 <Grid container spacing={gridSpacing}>
-                    <Grid item lg={4} md={6} sm={6} xs={12}>
+                    {/*<Grid item lg={4} md={6} sm={6} xs={12}>
                         <EarningCard isLoading={isLoading} />
+                    </Grid>*/}
+                    <Grid item >
+                        <IndicatorsCard isLoading={isLoading} 
+                                        title='Indicadores Cardíacos' 
+                                        subTitle='Últimos dados coletados' 
+                                        date="28/10/2021" 
+                                        body={<CardiacIndicator bpm='75' 
+                                                                sistole='75' 
+                                                                diastole='75' 
+                                                                mercurio='100' />}/>
+                    </Grid>
+                    <Grid item >
+                        <IndicatorsCard isLoading={isLoading} 
+                                        title='Indicadores Corpóreos' 
+                                        subTitle='Últimos dados coletados' 
+                                        date="28/10/2021"/>
+                    </Grid>
+                    <Grid item >
+                        <IndicatorsCard isLoading={isLoading} 
+                                        title='Indicadores Vitais' 
+                                        subTitle='Últimos dados coletados' 
+                                        date="28/10/2021"/>
                     </Grid>
                     <Grid item lg={4} md={6} sm={6} xs={12}>
                         {/* <TotalOrderLineChartCard isLoading={isLoading} /> */}

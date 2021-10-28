@@ -1,0 +1,114 @@
+// This is the project stylesheet
+
+// Colors
+$black-1: rgba(0, 0, 0, 1);
+$cornflower-blue: rgba(84, 193, 251, 1);
+$dodger-blue: rgba(11, 159, 238, 1);
+$midnight-blue: rgba(9, 66, 125, 1);
+$red: rgba(255, 0, 0, 1);
+$silver: rgba(196, 196, 196, 1);
+$text: rgba(0, 17, 51, 1);
+$transparent-black: rgba(0, 0, 0, 0.25);
+$transparent-cornflower-blue: rgba(84, 193, 251, 0.5);
+$transparent-dark-gray: rgba(169, 169, 169, 0);
+$transparent-silver: rgba(196, 196, 196, 0);
+$transparent-white: rgba(255, 255, 255, 0);
+$white: rgba(255, 255, 255, 1);
+
+// Typographies
+@mixin body {
+  font-family: "Work Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin circular-std-36-medium {
+  font-family: "Circular Std";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@mixin roboto-10-regular {
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+@mixin roboto-12-bold {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+}
+@mixin roboto-12-regular {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+}
+@mixin roboto-14-medium {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@mixin roboto-14-regular {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+@mixin roboto-18-regular {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+@mixin roboto-20-medium {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@mixin roboto-22-medium {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@mixin roboto-30-medium {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@mixin roboto-36-medium {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@mixin roboto-36-regular {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin roboto-42-medium {
+  font-family: "Roboto";
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@mixin roboto-48-medium {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@mixin roboto-64-medium {
+  font-family: "Roboto";
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 24px;
+}
