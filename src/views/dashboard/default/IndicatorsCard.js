@@ -23,12 +23,16 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         border: '3px solid rgba(11, 159, 238, 1)',
+        height: '300px'
+    },
+    header:{
+        height: '60px',
     },
     content: {
         padding: '0px !important'
     },
     title:{
-        padding: '20px 20px 0 10px',
+        
         color: 'rgba(9, 66, 125, 1)',
         display: 'flex',
         textAlign: 'center',
@@ -82,7 +86,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
     },
     body:{
-        
+        padding: '20px 10px 0 10px',
+        height: '240px'
     }
 }));
 
@@ -99,8 +104,8 @@ const IndicatorsCard = ({ isLoading, title, subTitle, date, body }) => {
                 <MainCard border={false} className={classes.card} contentClass={classes.content}>
                     <Grid container direction="column" >
                         <Grid item>
-                            <Grid container direction="row" borderBottom="2px solid rgba(109, 202, 250, 1)" justifyContent="space-between">
-                                <Grid item>
+                        
+                                <Grid item borderBottom="2px solid rgba(109, 202, 250, 1)" >
                                     <Grid container direction="column" alignItems="center">
                                         <Grid item className={classes.title}>
                                             {title}
@@ -115,7 +120,7 @@ const IndicatorsCard = ({ isLoading, title, subTitle, date, body }) => {
                                         {date}
                                     </Grid>
                                 </Grid>*/}
-                            </Grid>
+                            
                         </Grid>
                         <Grid item className={classes.body}>
                             {body}
