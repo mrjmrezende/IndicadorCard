@@ -14,6 +14,7 @@ import { gridSpacing } from './../../../store/constant';
 import CardiacIndicator from './CardiacIndicator';
 import IndicatorsCard from './IndicatorsCard';
 import CorporealIndicator from './CorporealIndicator';
+import VitalsIndicator from './VitalsIndicator';
 
 //-----------------------|| DEFAULT DASHBOARD ||-----------------------//
 
@@ -55,7 +56,11 @@ const Dashboard = () => {
                         <IndicatorsCard isLoading={isLoading} 
                                         title='Indicadores Vitais' 
                                         subTitle='Últimos dados coletados' 
-                                        date="28/10/2021"/>
+                                        date="28/10/2021"
+                                        body={<VitalsIndicator temperatura="39" 
+                                                               status="Febre"
+                                                               oximetria="99%"
+                                                               glicemia="150" />}/>
                     </Grid>
                     <Grid item lg={4} md={6} sm={6} xs={12}>
                         {/* <TotalOrderLineChartCard isLoading={isLoading} /> */}

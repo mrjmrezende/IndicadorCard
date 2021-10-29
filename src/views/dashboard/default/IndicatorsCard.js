@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'Roboto',
         fontSize: '22px',
         fontWeight: 500,
-        lineHeight: '24px',       
+        lineHeight: '24px',     
     },
     subTitle:{
         color: 'rgba(11, 159, 238, 1)',
@@ -97,22 +97,24 @@ const IndicatorsCard = ({ isLoading, title, subTitle, date, body }) => {
                 <SkeletonIndicatorsCard />
             ) : (
                 <MainCard border={false} className={classes.card} contentClass={classes.content}>
-                    <Grid container direction="column">
-                        <Grid container direction="row" borderBottom="2px solid rgba(109, 202, 250, 1)">
-                            <Grid item>
-                                <Grid container direction="column" alignItems="center">
-                                    <Grid item className={classes.title}>
-                                        {title}
-                                    </Grid>
-                                    <Grid item className={classes.subTitle} >
-                                        {subTitle}
+                    <Grid container direction="column" >
+                        <Grid item>
+                            <Grid container direction="row" borderBottom="2px solid rgba(109, 202, 250, 1)" justifyContent="space-between">
+                                <Grid item>
+                                    <Grid container direction="column" alignItems="center">
+                                        <Grid item className={classes.title}>
+                                            {title}
+                                        </Grid>
+                                        <Grid item className={classes.subTitle} >
+                                            {subTitle}
+                                        </Grid>
                                     </Grid>
                                 </Grid>
-                            </Grid>
-                            <Grid item className={classes.topRight}>
-                                <Grid item className={classes.date}>
-                                    {date}
-                                </Grid>
+                                {/*<Grid item className={classes.topRight} >
+                                    <Grid item className={classes.date}>
+                                        {date}
+                                    </Grid>
+                                </Grid>*/}
                             </Grid>
                         </Grid>
                         <Grid item className={classes.body}>

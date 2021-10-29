@@ -6,8 +6,6 @@ import { makeStyles } from '@material-ui/styles';
 import { Box, Popper, Avatar, Grid, Menu, MenuItem, Typography, Button } from '@material-ui/core';
 
 // project imports
-import MainCard from '../../../ui-component/cards/MainCard';
-import SkeletonIndicatorsCard from '../../../ui-component/cards/Skeleton/IndicatorsCard';
 
 // assets
 import HeartIcon from './../../../assets/images/icons/heart.svg';
