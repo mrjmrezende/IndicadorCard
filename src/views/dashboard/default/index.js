@@ -15,6 +15,7 @@ import CardiacIndicator from './CardiacIndicator';
 import IndicatorsCard from './IndicatorsCard';
 import CorporealIndicator from './CorporealIndicator';
 import VitalsIndicator from './VitalsIndicator';
+import IndexCard from './IndexCard';
 
 //-----------------------|| DEFAULT DASHBOARD ||-----------------------//
 
@@ -31,6 +32,9 @@ const Dashboard = () => {
                     {/*<Grid item lg={4} md={6} sm={6} xs={12}>
                         <EarningCard isLoading={isLoading} />
                     </Grid>*/}
+                    <Grid item >
+                        <IndexCard title='Olá, Seja bem-vindo!' />
+                    </Grid>
                     <Grid item >
                         <IndicatorsCard isLoading={isLoading} 
                                         title='Indicadores Cardíacos' 
